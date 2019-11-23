@@ -753,7 +753,7 @@ h6 {
 
 .download-list-nightlies {
   width: 100%;
-  text-align: right;
+  text-align: left;
 
   > * {
     margin: 0;
@@ -913,7 +913,7 @@ ul {
 }
 
 .text-container {
-  width: 450px;
+  width: 23rem;
   text-align: left;
 }
 
@@ -1055,6 +1055,8 @@ ul {
   justify-content: center;
   align-items: center;
   flex-basis: 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .community-header {
@@ -1268,8 +1270,44 @@ pre {
   }
   
   pre {
-    max-width: 50%;
+    max-width: 75%;
   }
+    
+  .videosheading {
+    text-align: center;
+  }
+  .videoplayerside {
+    padding-bottom: 4rem;
+  }
+  .videosection {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap-reverse;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+  }
+  .videoslink {
+    text-align: center;
+  }
+  .videoheading {
+    text-align: center;
+  }
+  .videocopyside {
+    text-align: center;
+  }
+  .videohtmlembed {
+    width: 560px;
+  }
+    
+  .text-container {
+    width: auto;
+  }
+  
+  .download-list-nightlies {
+    padding-left: 6rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1489,6 +1527,23 @@ pre {
   
   pre {
     max-width: 100%;
-    font-size: 12px;
+    font-size: 9px;
   }
+    
+ .videosection {
+    padding: 1rem;
+  }
+  .videocopyside {
+    padding: 1rem;
+  }
+  .videohtmlembed {
+    width: 210px;
+    height: 117px;
+  }
+    
+  .download-list-nightlies {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    }
 }
